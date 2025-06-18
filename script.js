@@ -8,16 +8,13 @@ console.log("Hello! If you see this, the script is working.");
 - [ ] Give the section with an id of container the text "Hello!".
 - [ ] Add the class main to the div with a class of footer.
 - [ ] Remove the class main on the div with a class of footer.
-- [ ] Create a new li element.
+- [Charly] Create a new li element.
 - [ ] Give the li the text "four".
-- [ ] Append the li to the ul element.
-- [ ] Loop over all of the lis inside the ol tag and give them a background color of "green".
+- [Charly] Append the li to the ul element.
+- [Charly] Loop over all of the lis inside the ol tag and give them a background color of "green".
 - [ ] Remove the div with a class of footer.
 */
 
-// Try rewriting this without using querySelector
-const header = document.querySelector("#container");
-console.log("header", header);
 //1: Select the section with an id of container without using querySelector.
 const container1 = document.getElementById("container");
 console.log("Task 1:", container1);
@@ -29,3 +26,18 @@ console.log("Task 2:", container2);
 // 3: Select all of the list items with a class of "second".
 const seconds = document.getElementsByClassName("second");
 console.log("Task 3:", seconds);
+
+
+// #8. Create a new li element
+const newLi = document.createElement("li");
+newLi.innerText = "four";
+
+// #10. Append the li to the ul 
+const ul = document.querySelector("ul");
+ul.appendChild(newLi);
+
+// #11. Loop over all of the lis inside the ol tag and give them a background color of "green".
+const olLis = document.querySelectorAll("ol li");
+olLis.forEach(li => {
+  li.style.backgroundColor = "green";
+});
