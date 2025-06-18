@@ -18,3 +18,14 @@ console.log("Hello! If you see this, the script is working.");
 // Try rewriting this without using querySelector
 const header = document.querySelector("#container");
 console.log("header", header);
+//1: Select the section with an id of container without using querySelector.
+const container1 = document.getElementById("container");
+console.log("Task 1:", container1);
+
+// 2: Select the section with an id of container using querySelector.
+const container2 = document.querySelector("#container");
+console.log("Task 2:", container2);
+
+// 3: Select all of the list items with a class of "second".
+const seconds = document.getElementsByClassName("second");
+console.log("Task 3:", seconds);
