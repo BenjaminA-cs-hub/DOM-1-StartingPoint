@@ -25,11 +25,17 @@ console.log("Task 2:", container2);
 
 // 3: Select all of the list items with a class of "second".
 const seconds = document.getElementsByClassName("second");
-console.log("Task 3:", seconds);
+console.log("Task 3:", seconds);More actions
 
+// Soluation for Question #7
+const footerElement = document.getElementsByClassName("footer");
+footerElement[0].classList.remove("main");
+console.log("Task 7:", footerElement);
 
 // #8. Create a new li element
 const newLi = document.createElement("li");
+
+// Solution for question 9
 newLi.innerText = "four";
 
 // #10. Append the li to the ul 
@@ -41,3 +47,15 @@ const olLis = document.querySelectorAll("ol li");
 olLis.forEach(li => {
   li.style.backgroundColor = "green";
 });
+
+// Solution for question #12
+const container5 = document.getElementsByClassName("footer");
+container5[0].remove(container5[0]);
+
+
+
+
+
+
+
+
