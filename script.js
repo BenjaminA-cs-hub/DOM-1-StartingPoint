@@ -34,6 +34,8 @@ console.log("Task 7:", footerElement);
 
 // #8. Create a new li element
 const newLi = document.createElement("li");
+
+// Solution for question 9
 newLi.innerText = "four";
 
 // #10. Append the li to the ul 
@@ -49,6 +51,7 @@ olLis.forEach(li => {
 // Solution for question #12
 const container5 = document.getElementsByClassName("footer");
 container5[0].remove(container5[0]);
+
 
 
 
