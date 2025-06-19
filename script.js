@@ -27,6 +27,22 @@ console.log("Task 2:", container2);
 const seconds = document.getElementsByClassName("second");
 console.log("Task 3:", seconds);More actions
 
+// [4] Select a list item with a class of third, but only the list item inside of the ol tag.
+const container4 = document.querySelector("ol li.third");
+console.log("Task 4:", container4);
+//console.log(container4.children);
+
+//[5] Give the section with an id of container the text "Hello!".
+const container5 = document.getElementById("container");
+container5.textContent = "Hello!";
+//container5.innerHTML = "Hello!";
+console.log("Task 5:", container5);
+
+//[6] Add the class main to the div with a class of footer.*/
+const container6 = document.getElementsByClassName("footer");
+container6[0].classList.add("main");
+console.log("Task 6:", container6[0]);
+
 // Soluation for Question #7
 const footerElement = document.getElementsByClassName("footer");
 footerElement[0].classList.remove("main");
@@ -35,7 +51,7 @@ console.log("Task 7:", footerElement);
 // #8. Create a new li element
 const newLi = document.createElement("li");
 
-// Solution for question 9
+// Solution for question #9
 newLi.innerText = "four";
 
 // #10. Append the li to the ul 
